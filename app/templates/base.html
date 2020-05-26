@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{% block title %}{% endblock %}</title>
+		<link href="{{ url_for('static', filename='dist/css/style.min.css') }}" rel="stylesheet" type="text/css"/>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">	
+   </head>
+   
+	<body class='flex'>
+		<header>
+			{% block header %}{% endblock %}
+		</header>
+
+		<div class='content'>
+			{% block form %}{% endblock %}
+		</div>		
+
+		<footer>
+			{% block footer %}{% endblock %}
+		</footer>
+	</body>
+
+</html>
