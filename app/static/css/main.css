@@ -1,7 +1,49 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Creates sticky footer */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 header img {
     width: 35px;
+    vertical-align: middle;
+}
+
+header span {
+    font-size: 1.5em;
+    vertical-align: bottom;
+}
+
+/* Content */
+.content {
+    flex: 1; /* Creates sticky footer */
+    text-align: center;
+}
+
+.content .forms {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
 }
 
 .content img {
     max-width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 12px;
 }
