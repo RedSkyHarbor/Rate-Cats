@@ -12,7 +12,7 @@ $ pip install -r requirements.txt
 
 ## Usage
 ```bash
-$ export FLASK_APP=main.py
+$ export FLASK_APP=app/app.py
 $ flask run
 ```
 
