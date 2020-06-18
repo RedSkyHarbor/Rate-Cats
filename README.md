@@ -1,8 +1,11 @@
 # Rate Cats
 Randomly picks an image of a cat, vote whether or not you like this cat
+[Rate some cats here](https://rate-cats.herokuapp.com/)
 
-# About
-Utilizes [Flask](https://palletsprojects.com/p/flask/) and [The Cat API](https://docs.thecatapi.com/).
+# Built with
+[Flask](https://palletsprojects.com/p/flask/) - Python web framework
+[Gunicorn](https://gunicorn.org/) - Production ready WSGI server 
+[The Cat API](https://docs.thecatapi.com/) - Holds images of cats
 
 
 ## Installation
