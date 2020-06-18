@@ -4,7 +4,9 @@ Randomly picks an image of a cat, vote whether or not you like this cat
 
 # Built with
 [Flask](https://palletsprojects.com/p/flask/) - Python web framework
+
 [Gunicorn](https://gunicorn.org/) - Production ready WSGI server 
+
 [The Cat API](https://docs.thecatapi.com/) - Holds images of cats
 
 
@@ -19,5 +21,5 @@ $ export FLASK_APP=app/app.py
 $ flask run
 ```
 
-## License 
-[MIT](https://choosealicense.com/licenses/mit/)
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for detailss
