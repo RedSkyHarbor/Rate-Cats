@@ -23,6 +23,7 @@ header span {
 
 /* Content */
 .content {
+    min-height: calc(100vh-43px); 
     flex: 1; /* Creates sticky footer */
     text-align: center;
 }
