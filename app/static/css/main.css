@@ -4,6 +4,29 @@
     min-height: 100vh; /* Creates sticky footer */
 }
 
+/* buttons */
+button.like {
+    width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-color:lightgreen;
+	border-color: green;
+	border-width: 1px;
+    font-size: 15px;
+}
+
+button.dislike {
+    width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-color: palevioletred;
+	border-color:darkred;
+	border-width: 1px;
+    font-size: 15px;
+}
+
 /* Header */
 header {
     text-align: center;
@@ -23,14 +46,11 @@ header span {
 
 /* Content */
 .content {
-    min-height: calc(100vh-43px); 
     flex: 1; /* Creates sticky footer */
     text-align: center;
 }
 
 .content .forms {
-    display: flex;
-    justify-content: space-evenly;
     padding-bottom: 10px;
 }
 

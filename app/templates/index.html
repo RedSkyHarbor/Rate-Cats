@@ -3,18 +3,20 @@
 {% block title %}rate cats{% endblock %}
 
 {% block header %}
-    <img src="{{url_for('static', filename='img/cat_silhouette.svg')}}"/>
+    <img class='cat-img' src="{{url_for('static', filename='img/cat_silhouette.svg')}}"/>
     <span>Rate this cat</span>    
 {% endblock %}
 
 {% block form %}
-    <div class='forms'>
-        <form action="{{ url_for('dislike') }}" method="POST">
-            <button name="id" value="{{ cat.id }}">Dislike</button>
-        </form>
-        <form action="{{ url_for('like') }}" method="POST">
-            <button name="id" value="{{ cat.id }}" >Like</button>
-        </form>
+    <div class='container forms'>
+        <div class='row'>
+            <form class='col' action="{{ url_for('dislike') }}" method="POST">
+                <button class='dislike' name="id" value="{{ cat.id }}"><i class="far fa-thumbs-down"></i></button>
+            </form>
+            <form class='col' action="{{ url_for('like') }}" method="POST">
+                <button class='like' name="id" value="{{ cat.id }}" ><i class="far fa-thumbs-up"></i></button>
+            </form>
+        </div>
     </div>   
 {% endblock %}
 
