@@ -3,8 +3,12 @@
 {% block title %}rate cats{% endblock %}
 
 {% block header %}
-    <img class='cat-img' src="{{url_for('static', filename='img/cat_silhouette.svg')}}"/>
-    <span>Rate this cat</span>    
+    <nav class='navbar'>
+        <a href='#' class='navbar-brand'>
+            <img width='35' alt='cat' src="{{url_for('static', filename='img/cat_silhouette.svg')}}"/>
+            Cat Rates
+        </a>
+    </nav>
 {% endblock %}
 
 {% block form %}
