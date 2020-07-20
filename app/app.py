@@ -9,10 +9,10 @@ CAT_SEARCH_URL = 'https://api.thecatapi.com/v1/images/search'
 CAT_VOTE_URL = 'https://api.thecatapi.com/v1/votes'
 
 @app.route('/')
-def index():
+def vote():
     r = requests.get(CAT_SEARCH_URL, headers={'x-api-key': API_KEY})
     image = r.json()[0]
-    return render_template('index.html', cat=image)
+    return render_template('vote.html', cat=image)
 
 @app.route('/favorites')
 def favorites():
