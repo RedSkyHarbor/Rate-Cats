@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Vote on cats{% endblock %}
+
+{% block content %}
+    <div class='container forms'>
+        <div class='buttons-row row'>
+            <form class='col' action="{{ url_for('dislike') }}" method="POST">
+                <button class='dislike' name="id" value="{{ cat.id }}"><i class="far fa-thumbs-down"></i></button>
+            </form>
+            <form class='col' action="{{ url_for('like') }}" method="POST">
+                <button class='like' name="id" value="{{ cat.id }}" ><i class="far fa-thumbs-up"></i></button>
+            </form>
+        </div>
+        <div class='row'>
+            <div class='col'>
+                <img src={{ cat.url }} />   
+            </div>
+        </div>
+    </div>   
+{% endblock %}
+
+
