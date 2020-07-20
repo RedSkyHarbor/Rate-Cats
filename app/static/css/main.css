@@ -5,6 +5,22 @@
 }
 
 /* buttons */
+
+.buttons-row {
+    margin-bottom: 10px;
+}
+
+button.favorite {
+    width: 30px;
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	border-radius: 50%;
+	background-color:yellow;
+	border-color: gold;
+	border-width: 1px;
+    font-size: 15px;
+}
+
 button.like {
     width: 30px;
 	height: 30px;
@@ -27,12 +43,6 @@ button.dislike {
     font-size: 15px;
 }
 
-/* NavBar */
-.navbar-brand {
-    vertical-align: middle;
-    color: black;
-}
-
 /* Content */
 .content {
     flex: 1; /* Creates sticky footer */
@@ -52,9 +62,12 @@ button.dislike {
 /* Footer */
 footer {
     color: black;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    margin-top: 30px;
     text-align: center;
     font-size: 12px;
+}
+
+.footer-content {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
