@@ -9,16 +9,16 @@
    </head>
    
 	<body class='flex'>
-		<header class='bg-light'>
+		<header>
 			{% block header %}{% endblock %}
 		</header>
 
 		<div class='content'>
-			{% block form %}{% endblock %}
+			{% block buttons %}{% endblock %}
 			<img class='cat-image' src={{ cat.url }} />
 		</div>		
 
-		<footer class='bg-light'>
+		<footer>
 			{% block footer %}{% endblock %}
 		</footer>
 	</body>
