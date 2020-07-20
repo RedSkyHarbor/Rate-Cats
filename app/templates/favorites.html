@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block title %}View your favorites{% endblock %}
+
 {% block content %}
-    <h1>Favorites</h1>
+    {% if not urls %}
+        <h4>No favorited images yet :(</h4>
+    {% else %}
+        {% for url in urls%}
+            <img src='{{ url }}' />
+        {% endfor %}
+    {% endif %}
 {% endblock %}
