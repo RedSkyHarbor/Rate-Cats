@@ -27,12 +27,6 @@ button.dislike {
     font-size: 15px;
 }
 
-/* NavBar */
-.navbar-brand {
-    vertical-align: middle;
-    color: black;
-}
-
 /* Content */
 .content {
     flex: 1; /* Creates sticky footer */
