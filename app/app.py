@@ -29,3 +29,8 @@ def dislike():
     return redirect("/")
 
 
+@app.route('/favorite', methods=['POST'])
+def favorite():
+    # Save request.form["id"] to user cachce
+    return redirect("/")
+

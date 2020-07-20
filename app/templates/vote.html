@@ -8,6 +8,11 @@
             <form class='col' action="{{ url_for('dislike') }}" method="POST">
                 <button class='dislike' name="id" value="{{ cat.id }}"><i class="far fa-thumbs-down"></i></button>
             </form>
+
+            <form class='col' action="{{ url_for('favorite') }}" method="POST">
+                <button class='favorite' name="id" value="{{ cat.id }}"><i class="far fa-heart"></i></button>
+            </form>
+
             <form class='col' action="{{ url_for('like') }}" method="POST">
                 <button class='like' name="id" value="{{ cat.id }}" ><i class="far fa-thumbs-up"></i></button>
             </form>
