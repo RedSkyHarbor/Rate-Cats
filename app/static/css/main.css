@@ -5,6 +5,11 @@
 }
 
 /* buttons */
+
+.buttons-row {
+    margin-bottom: 10px;
+}
+
 button.like {
     width: 30px;
 	height: 30px;

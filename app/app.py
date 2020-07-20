@@ -14,6 +14,10 @@ def index():
     image = r.json()[0]
     return render_template('index.html', cat=image)
 
+@app.route('/favorites')
+def favorites():
+    return render_template('favorites.html')
+
 @app.route('/like', methods=['POST'])
 def like():
     r = requests.post(CAT_VOTE_URL, json={'image_id': request.form["id"], 'value': 1 })
