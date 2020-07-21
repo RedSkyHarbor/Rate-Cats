@@ -31,6 +31,23 @@
 
 		<div class='content'> {% block content %}{% endblock %} </div>		
 
+		{% if cookies_check() %}
+			{# then user has already consented so no requirement for consent banner #}
+		{% else %}
+			{# show a cookie consent banner #}
+			<div class="bg-light cookie-consent" id="cookie-consent-container">
+				<span>This site requires cookies to function properly. You may disable cookies in browser settings.</span>
+				<button id="cookie-consent">I Consent</button>
+			</div>
+			<script>
+				var fn = function () {
+					document.cookie = "cookie_consent=true";
+					document.getElementById('cookie-consent-container').hidden = true;
+				};
+				document.getElementById('cookie-consent').onclick = fn;
+			</script>
+		{% endif %}
+
 		<footer class='footer-content bg-light'>
 			<a class="github-button" href="https://github.com/RedSkyHarbor" data-show-count="true" aria-label="Follow @RedSkyHarbor on GitHub">Follow @RedSkyHarbor</a>
 			<a class="github-button" href="https://github.com/RedSkyHarbor/Rate-Cats" data-icon="octicon-star" data-show-count="true" aria-label="Star RedSkyHarbor/rate-cats on GitHub">Star</a>

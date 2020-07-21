@@ -4,8 +4,11 @@
     min-height: 100vh; /* Creates sticky footer */
 }
 
-/* buttons */
+.cookie-consent {
+    text-align: center;
+}
 
+/* buttons */
 .buttons-row {
     margin-bottom: 10px;
 }
@@ -44,6 +47,10 @@ button.dislike {
 }
 
 /* Content */
+.cat-img {
+    margin-bottom: 30px;
+}
+
 .content {
     flex: 1; /* Creates sticky footer */
     text-align: center;
@@ -54,20 +61,13 @@ button.dislike {
     padding-bottom: 10px;
 }
 
-.content img {
-    max-width: 100%;
-    fill: white;
-}
-
 /* Footer */
 footer {
     color: black;
-    margin-top: 30px;
     text-align: center;
     font-size: 12px;
 }
 
 .footer-content {
-    padding-top: 5px;
     padding-bottom: 5px;
 }
